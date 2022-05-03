@@ -1,0 +1,192 @@
+@import 'var.less';
+@import 'common.less';
+
+.header-container {
+    padding-bottom: 20px;
+
+    .header-navmenu {
+        background-color: grey;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        top: 0;
+
+        .menu-text {
+            align-self: flex-end;
+            border: 1px solid white;
+            font-size: 20px;
+            color: white;
+            font-family: cursive;
+            text-transform: uppercase;
+
+            @media only screen and (min-width:@tablet) {
+                display: none;
+            }
+
+
+        }
+
+        ul {
+            display: none;
+
+            .home-icon {
+                padding-top: 12px;
+                margin-right: 45px;
+
+                @media only screen and (min-width:@desktop) {
+
+                    font-size: 17px;
+                }
+
+                .fa-home {
+                    color: black;
+                    transition: 0.5s;
+
+                    &:hover {
+                        color: white;
+                    }
+
+                }
+
+            }
+
+
+            li {
+                list-style: none;
+
+
+                a {
+                    display: block;
+                    padding: 0 10px;
+                    font-family: 'Permanent Marker', cursive;
+                    color: black;
+                    text-align: center;
+                    line-height: 40px;
+                    text-decoration: none;
+
+
+                    @media only screen and (min-width:@desktop) {
+                        padding: 0 30px;
+                        font-size: 17px;
+
+                    }
+                }
+
+                &:hover {
+                    background-color: white;
+                    border-radius: 10px;
+                }
+
+            }
+
+            @media only screen and (min-width:@tablet) {
+                display: flex;
+                align-self: center;
+
+            }
+
+            .social-icons {
+                padding-top: 12px;
+                margin-left: 60px;
+
+                font-size: 15px;
+
+
+                @media only screen and (min-width:@desktop) {
+
+                    font-size: 20px;
+                }
+
+                a {
+
+                    i {
+                        transition: transform 0.5s ease-in-out;
+
+                        &:hover {
+                            color: white;
+
+                            transform: rotateY(180deg);
+                        }
+                    }
+
+                    @media only screen and (min-width:@desktop) {
+                        margin-left: 5px;
+                    }
+                }
+
+                .fa-facebook {
+                    background-color: #35559b;
+                    color: black;
+                    width: 15px;
+                }
+
+                .fa-youtube {
+                    background-color: red;
+                    color: black;
+                }
+
+                .fa-instagram {
+                    background-color: #2a72a7;
+                    color: black;
+                }
+
+
+            }
+
+
+
+
+        }
+
+    }
+
+
+    .header-logo {
+
+
+        img {
+
+            width: 100%;
+            height: 180px;
+            display: block;
+
+            @media only screen and (min-width:@tablet) {
+                height: 200px;
+            }
+
+            @media only screen and (min-width:@desktop) {
+                height: 220px;
+            }
+
+
+        }
+
+
+        .motto {
+            position: absolute;
+            margin-top: 40px;
+            padding-left: 50px;
+            font-size: 70px;
+            font-weight: 600;
+            color: white;
+            text-decoration: underline;
+
+            @media only screen and (min-width:@tablet) {
+                font-size: 90px;
+                padding-left: 100px;
+
+            }
+
+            @media only screen and (min-width:@desktop) {
+                font-size: 110px;
+                padding-left: 300px;
+
+            }
+            @media only screen and (min-width:@desktop-lg) {
+                padding-left: 400px;
+
+            }
+        }
+    }
+}
