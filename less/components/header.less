@@ -6,18 +6,28 @@
 
     .header-navmenu {
         background-color: grey;
+        padding-left: 10px;
+        padding-right: 10px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: end;
         position: fixed;
         width: 100%;
         top: 0;
 
+        @media only screen and (min-width:@tablet) {
+            justify-content: space-between;
+        }
+
+
         .menu-text {
-            align-self: flex-end;
+            font-family: cursive;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
             border: 1px solid white;
             font-size: 20px;
             color: white;
-            font-family: cursive;
             text-transform: uppercase;
 
             @media only screen and (min-width:@tablet) {
@@ -27,30 +37,30 @@
 
         }
 
-        ul {
+        .home-icon {
+            align-self: center;
             display: none;
+            font-size: 18px;
 
-            .home-icon {
-                padding-top: 12px;
-                margin-right: 45px;
+            @media only screen and (min-width:@tablet) {
+                display: block;
+            }
 
-                @media only screen and (min-width:@desktop) {
+            .fa-home {
+                font-weight: 400;
+                color: black;
+                transition: 0.5s;
 
-                    font-size: 17px;
-                }
-
-                .fa-home {
-                    color: black;
-                    transition: 0.5s;
-
-                    &:hover {
-                        color: white;
-                    }
-
+                &:hover {
+                    color: white;
                 }
 
             }
 
+        }
+
+        ul {
+            display: none;
 
             li {
                 list-style: none;
@@ -60,6 +70,7 @@
                     display: block;
                     padding: 0 10px;
                     font-family: 'Permanent Marker', cursive;
+                    font-weight: 400;
                     color: black;
                     text-align: center;
                     line-height: 40px;
@@ -85,56 +96,56 @@
                 align-self: center;
 
             }
+        }
 
-            .social-icons {
-                padding-top: 12px;
-                margin-left: 60px;
+        .social-icons {
+            display: none;
+            align-self: center;
+            font-size: 15px;
+            padding-right: 20px;
 
-                font-size: 15px;
-
-
-                @media only screen and (min-width:@desktop) {
-
-                    font-size: 20px;
-                }
-
-                a {
-
-                    i {
-                        transition: transform 0.5s ease-in-out;
-
-                        &:hover {
-                            color: white;
-
-                            transform: rotateY(180deg);
-                        }
-                    }
-
-                    @media only screen and (min-width:@desktop) {
-                        margin-left: 5px;
-                    }
-                }
-
-                .fa-facebook {
-                    background-color: #35559b;
-                    color: black;
-                    width: 15px;
-                }
-
-                .fa-youtube {
-                    background-color: red;
-                    color: black;
-                }
-
-                .fa-instagram {
-                    background-color: #2a72a7;
-                    color: black;
-                }
-
-
+            @media only screen and (min-width:@tablet) {
+                display: block;
             }
 
 
+            @media only screen and (min-width:@desktop) {
+
+                font-size: 20px;
+            }
+
+            a {
+
+                i {
+                    transition: transform 0.5s ease-in-out;
+
+                    &:hover {
+                        color: white;
+
+                        transform: rotateY(180deg);
+                    }
+                }
+
+                @media only screen and (min-width:@desktop) {
+                    margin-left: 5px;
+                }
+            }
+
+            .fa-facebook {
+                background-color: #35559b;
+                color: black;
+                width: 15px;
+            }
+
+            .fa-youtube {
+                background-color: red;
+                color: black;
+            }
+
+            .fa-instagram {
+                background-color: #2a72a7;
+                color: black;
+            }
 
 
         }
@@ -143,13 +154,13 @@
 
 
     .header-logo {
-
+        display: block;
 
         img {
 
             width: 100%;
             height: 180px;
-            display: block;
+
 
             @media only screen and (min-width:@tablet) {
                 height: 200px;
@@ -165,26 +176,30 @@
 
         .motto {
             position: absolute;
-            margin-top: 40px;
-            padding-left: 50px;
-            font-size: 70px;
+            font-family: 'Allison', cursive;
+            margin-top: 50px;
+            margin-left: 25%;
+            text-align: center;
+            font-size: 50px;
             font-weight: 600;
             color: white;
             text-decoration: underline;
 
             @media only screen and (min-width:@tablet) {
-                font-size: 90px;
-                padding-left: 100px;
+                font-size: 70px;
+
 
             }
 
             @media only screen and (min-width:@desktop) {
-                font-size: 110px;
-                padding-left: 300px;
+                font-size: 90px;
+
 
             }
+
             @media only screen and (min-width:@desktop-lg) {
-                padding-left: 400px;
+                font-size: 110px;
+
 
             }
         }

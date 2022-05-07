@@ -12,7 +12,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/css/main.min.css">
-
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <script src="/mainjs.js"></script>
+    
     <title>Relax</title>
 </head>
 
@@ -23,28 +28,25 @@
                 <span>Menu</span>
                 <i class="fa fa-bars"></i>
             </div>
+            <div class="home-icon">
+                <a href="native spirit relax.html"><i class="fa fa-home">Home</i></a>
+            </div>
             <ul>
-                <div class="home-icon">
-                    <a href="native spirit relax.html"><i class="fa fa-home">Home</i></a>
-                </div>
-
-                <li> <a href="relax.html">RELAX</a> </li>
+               <li> <a href="relax.html">RELAX</a> </li>
                 <li> <a href="philosophy.html">PHILOSOPHY</a> </li>
                 <li> <a href="literature.html">LITERATURE</a></li>
                 <li> <a href="freetime.html">FREE TIME</a></li>
                 <li><a href="proverb.html">PROVERB</a> </li>
-
-                <div class="social-icons">
-
-                    <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
-
-                    <a href="//www.instagram.com"><i class="fa fa-instagram"></i></a>
-
-                    <a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
-
-
-                </div>
             </ul>
+            <div class="social-icons">
+
+                <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+
+                <a href="//www.instagram.com"><i class="fa fa-instagram"></i></a>
+
+                <a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+
+            </div>
 
         </nav>
         <div class="header-logo">
@@ -59,8 +61,7 @@
 <body>
     <section class="topnews-conatiner">
         <div class="container">
-
-            <div class="top-news">
+            <div class="top-news" id="container">
                 <div class="top-image">
                     <img src="/public/images/unnamed.png" alt="">
 
@@ -77,47 +78,47 @@
                         Explore. Dream. Discover.”</p>
                 </div>
 
-
-
             </div>
 
 
-            <div class="second-top-news">
-                <div class="second-top-image">
-                    <img src="/public/images/dreams.jpg" alt="">
-                    <div class="second-top-news-text">
-                        <h2><a href="#">John C. Maxwell</a></h2>
-                        <p> “It’s only after you’ve stepped outside your comfort zone that you begin to change, grow,
-                            and
-                            transform.”</p>
-                    </div>
-                </div>
+           
+        </div>
 
-                <div class="second-top-image">
-                    <img src="/public/images/Roy-T-Bennett-Quotes-600x295.jpg ">
-                    <div class="second-top-news-text">
-                        <h2><a href="#">Roy T. Bennett</a></h2>
-                        <p> "Dreams don't work unless you do"</p>
-                    </div>
+        <div class="second-top-news">
+            <div class="second-top-image">
+                <img src="/public/images/dreams.jpg" alt="">
+                <div class="second-top-news-text">
+                    <h2><a href="#">John C. Maxwell</a></h2>
+                    <p> “It’s only after you’ve stepped outside your comfort zone that you begin to change, grow,
+                        and
+                        transform.”</p>
                 </div>
-
-                <div class="second-top-image">
-                    <img src="/public/images/pexels-alexandro-david-1835016.jpg ">
-                    <div class="second-top-news-text">
-                        <h2><a href="#">Meditation</a></h2>
-                        <p> "A calm person has the strongest mind."</p>
-                    </div>
-                </div>
-
-                <div class="second-top-image">
-                    <img src="/public/images/roald dahl.webp ">
-                    <div class="second-top-news-text">
-                        <h2><a href="#">Roald Dahl</a></h2>
-                        <p> "It doesn't matter who you are or what you look like, so long as somebody loves you."</p>
-                    </div>
-                </div>
-
             </div>
+
+            <div class="second-top-image">
+                <img src="/public/images/Roy-T-Bennett-Quotes-600x295.jpg ">
+                <div class="second-top-news-text">
+                    <h2><a href="#">Roy T. Bennett</a></h2>
+                    <p> "Dreams don't work unless you do"</p>
+                </div>
+            </div>
+
+            <div class="second-top-image">
+                <img src="/public/images/pexels-alexandro-david-1835016.jpg ">
+                <div class="second-top-news-text">
+                    <h2><a href="#">Meditation</a></h2>
+                    <p> "A calm person has the strongest mind."</p>
+                </div>
+            </div>
+
+            <div class="second-top-image">
+                <img src="/public/images/roald dahl.webp ">
+                <div class="second-top-news-text">
+                    <h2><a href="#">Roald Dahl</a></h2>
+                    <p> "It doesn't matter who you are or what you look like, so long as somebody loves you."</p>
+                </div>
+            </div>
+
         </div>
 
     </section>
@@ -155,6 +156,7 @@
 
     </footer>
 
+    
 </body>
 
 </html>
