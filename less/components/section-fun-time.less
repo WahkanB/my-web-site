@@ -1,0 +1,85 @@
+@import 'var.less';
+@import 'common.less';
+
+.fun-time {
+    margin-top: 90px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    border-top: 5px solid grey;
+
+    .fun-time-container {
+        padding-left: 20px;
+       
+        
+
+        @media only screen and (min-width:@tablet) {
+            display: flex;
+            justify-content: center;
+        }
+
+
+        .today-fun {
+            border-radius: 10px;
+            background-color: grey;
+            padding: 5px 0px;
+            text-align: center;
+            transition: 0.3s;
+            margin-bottom: 20px;
+            margin-right: 10px;
+            width: 400px;
+
+            span {
+                color: #fb246a;
+                font-size: 30px;
+                font-weight: 600;
+
+                ;
+            }
+
+            i {
+                font-size: 60px;
+                color: #014b85;
+                transition: 0.3s;
+            }
+
+            p {
+                font-size: 20px;
+                font-weight: normal;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+        }
+        .first:hover {
+            box-shadow: rgba(116, 116, 116, 0.4) -5px 5px, rgba(116, 116, 116, 0.3) -10px 10px, rgba(116, 116, 116, 0.2) -15px 15px, rgba(116, 116, 116, 0.1) -20px 20px, rgba(116, 116, 116, 0.05) -25px 25px;
+            background-color: rgb(200, 221, 221);
+
+            i,
+            a {
+                color: #fb246a;
+            }
+        }
+
+        .second:hover {
+            box-shadow: rgba(116, 116, 116, 0.4) 0px 5px, rgba(116, 116, 116, 0.3) 0px 10px, rgba(116, 116, 116, 0.2) 0px 15px, rgba(116, 116, 116, 0.1) 0px 20px, rgba(116, 116, 116, 0.05) 0px 25px;
+            background-color: rgb(200, 221, 221);
+
+            i,
+            a {
+                color: #fb246a;
+            }
+        }
+
+        .third:hover {
+            box-shadow: rgba(116, 116, 116, 0.4) 5px 5px, rgba(116, 116, 116, 0.3) 10px 10px, rgba(116, 116, 116, 0.2) 15px 15px, rgba(116, 116, 116, 0.1) 20px 20px, rgba(116, 116, 116, 0.05) 25px 25px;
+            background-color: rgb(200, 221, 221);
+
+            i,
+            a {
+                color: #fb246a;
+            }
+        }
+    }
+
+
+}
