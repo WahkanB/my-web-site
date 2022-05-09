@@ -9,33 +9,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Fruktur&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/css/main.min.css">
+    <script src="/jquery-3.6.0.min.js"></script>
     <script src="/mainjs.js"></script>
     <script src="https://kit.fontawesome.com/f30c56388f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-    integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <title>Relax</title>
 </head>
 
 <header>
     <div class="header-container">
-        <nav class="header-navmenu">
-            <div class="menu-text">
-                <span>Menu</span>
-                <i class="fa-solid fa-bars"></i>
-            </div>
+        <div class="header-navmenu">
             <div class="home-icon">
                 <a href="native spirit relax.html"> <i class="fa fa-house">Home</i> </a>
             </div>
-            <ul>
-               <li> <a href="relax.html">RELAX</a> </li>
-                <li> <a href="philosophy.html">PHILOSOPHY</a> </li>
-                <li> <a href="literature.html">LITERATURE</a></li>
-                <li> <a href="freetime.html">FREE TIME</a></li>
-                <li><a href="proverb.html">PROVERB</a> </li>
-            </ul>
+            <div class="menu-text">
+                <span id="clicknav">Menu</span>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <nav class="header-menu-nav" id="togglenav">
+                <ul>
+                    <li> <a href="relax.html">RELAX</a> </li>
+                    <li> <a href="philosophy.html">PHILOSOPHY</a> </li>
+                    <li> <a href="literature.html">LITERATURE</a></li>
+                    <li> <a href="freetime.html">FREE TIME</a></li>
+                    <li><a href="proverb.html">PROVERB</a> </li>
+                </ul>
+            </nav>
             <div class="social-icons">
 
                 <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
@@ -46,9 +49,9 @@
 
             </div>
 
-        </nav>
+        </div>
         <div class="header-moto">
-            <span class="motto">Free your mind</span>  
+            <span class="motto">Free your mind</span>
         </div>
     </div>
 </header>
@@ -56,7 +59,7 @@
 <body>
     <section class="topnews-conatiner">
         <div class="container">
-            <div class="top-news" >
+            <div class="top-news">
                 <div class="top-image">
                     <img src="/public/images/unnamed.png" alt="">
 
@@ -76,7 +79,7 @@
             </div>
 
 
-           
+
         </div>
 
         <div class="second-top-news">
@@ -119,22 +122,22 @@
     </section>
 
     <section class="fun-time">
-        <div class="fun-time-container" >
-            <div class="today-fun first" >
+        <div class="fun-time-container">
+            <div class="today-fun first">
                 <i class="fa-solid fa-angles-right"></i>
                 <span>Today Proverb</span>
                 <i class="fa-solid fa-angles-left"></i>
                 <p>It is better to have less thunder in the mouth and more lightning in the hand. – Apache.</p>
             </div>
 
-            <div class="today-fun second" >
+            <div class="today-fun second">
                 <i class="fa-duotone fa-exclamation"></i>
                 <span>Did you know</span>
                 <i class="fa-duotone fa-exclamation"></i>
                 <p>Porsche also builds tractors</p>
             </div>
 
-            <div class="today-fun third" >
+            <div class="today-fun third">
                 <i class="fa-solid fa-angles-right"></i>
                 <span>Funny fact</span>
                 <i class="fa-solid fa-angles-left"></i>
@@ -179,13 +182,13 @@
                 </div>
             </div>
 
-        </div> 
+        </div>
     </section>
 
     <footer class="footer-area">
-        <div class="footer-container"> 
-           <span>Free your mind</span>
-           <img src="/public/images/relaxphoto.jpg" alt="">
+        <div class="footer-container">
+            <span>Free your mind</span>
+            <img src="/public/images/relaxphoto.jpg" alt="">
             <div class="about-us">
                 <ul>
                     <li>
@@ -215,7 +218,7 @@
 
     </footer>
 
-    
+
 </body>
 
 </html>
