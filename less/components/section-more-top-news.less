@@ -1,64 +1,92 @@
 @import 'var.less';
 @import 'common.less';
 
-.more-top-news{
+.more-top-news {
     padding-left: 10px;
     padding-right: 10px;
 
-    @media only screen and (min-width:@desktop) {
-        display: flex;
+    @media only screen and (min-width:@tablet-xs) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    @media only screen and (min-width:@tablet) {
         padding-left: 30px;
+        padding-right: 30px;
     }
 
     @media only screen and (min-width:@desktop) {
         padding-left: 50px;
+        padding-right: 50px;
+    }
+    @media only screen and (min-width:@desktop-lg) {
+        padding-left: 75px;
+        padding-right: 75px;
     }
 
     .second-top-news {
-        @media only screen and (min-width:@desktop-lg) {
-            display: flex;
-            flex-wrap: wrap;
-            flex-grow: 1;
-           justify-content: space-between;
-            flex-basis: calc((100% / 2 ) - 30px );
-          }
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+       
+
+      
+
 
         .second-top-image {
             margin-bottom: 20px;
 
-            @media only screen and (min-width:@tablet-xs) {
-                display: flex;
-                flex-direction: column;
-                width: 400px;
+            @media only screen and (min-width:@mobile) {
+
+                width: 200px;
                 height: auto;
 
             }
 
+            @media only screen and (min-width:@tablet-xs) {
+                width: 250px;
+                height: auto;
+
+            }
             @media only screen and (min-width:@tablet) {
                 width: 300px;
                 height: auto;
+
             }
-    
-            
-            
+
+            @media only screen and (min-width:@desktop) {
+                width: 330px;
+                height: auto;
+            }
+
+
+
 
 
             img {
                 width: 100%;
                 height: auto;
 
+               
+
                 @media only screen and (min-width:@tablet-xs) {
-                    width: 330px;
-                    height: auto;;
+                    width: 250px;
+                    height: auto;
+                    ;
 
                 }
-
                 @media only screen and (min-width:@tablet) {
                     width: 300px;
                     height: auto;
+    
                 }
-                
-                
+
+                @media only screen and (min-width:@desktop) {
+                    width: 330px;
+                    height: auto;
+                }
+
+
             }
         }
 
